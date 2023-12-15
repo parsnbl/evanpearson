@@ -1,0 +1,43 @@
+{
+  "name": "portfolio-3",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev --manual -c \"npm run dev:server\"",
+    "dev:server": "tsx watch --clear-screen=false ./backend/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remix-run/express": "^2.4.0",
+    "@remix-run/node": "^2.4.0",
+    "@remix-run/react": "^2.4.0",
+    "express": "^4.18.2",
+    "isbot": "^3.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.4.0",
+    "@types/express": "^4.17.21",
+    "@types/react": "^18.2.45",
+    "@types/source-map-support": "^0.5.10",
+    "chokidar": "^3.5.3",
+    "eslint": "^8.55.0",
+    "nodemon": "^3.0.2",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  },
+  "nodemonConfig": {
+    "execMap": {
+      "ts": "ts-node-esm"
+    }
+  }
+}
